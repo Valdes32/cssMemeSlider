@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.cdnfonts.com/css/georgia" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Forum&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
 	<title>cssMemeSlider</title>
 </head>
+
 <body>
 	<div class="wrapper">
-		<input type=radio name="slider" id="slide1" checked />
-		<input type=radio name="slider" id="slide2" />
-		<input type=radio name="slider" id="slide3" />
-		<input type=radio name="slider" id="slide4" />
-	
-		<div class="slider-wrapper">
-			<div class=inner>
-				<div class="slide">
-					<div class="info">
-						<h3>CSS is awesome</h3></div>
-					<img src="./img/1.jpg" />
-				</div>
-	
-				<div class="slide">
-					<div class="info">
-						<h3>CSS style</h3></div>
-					<img src="./img/2.jpg" />
-				</div>
-	
-				<div class="slide">
-					<div class="info">
-						<h3>Add flexbox to pikachu meme</h3></div>
-					<img src="./img/3.jpg" />
-				</div>
-	
-				<div class="slide">
-					<div class="info">
-						<h3>HTML vs CSS</h3></div>
-					<img src="./img/4.jpg" />
-				</div>
-	
+		<div class="slider">
+			<input type="radio" class="slider__toggle" name="slider__toggle" id="slider__toggle--1" checked>
+			<input type="radio" class="slider__toggle" name="slider__toggle" id="slider__toggle--2">
+			<input type="radio" class="slider__toggle" name="slider__toggle" id="slider__toggle--3">
+			<input type="radio" class="slider__toggle" name="slider__toggle" id="slider__toggle--4">
+
+			<ul class="slider__slides">
+				<li class="slider__slide">
+					<div class="slid">
+						<img src="./img/1.jpg" alt="Slide 1">
+						<h3>Text 1</h3>
+					</div>
+				</li>
+				<li class="slider__slide">
+					<div class="slid">
+						<img src="./img/2.jpg" alt="Slide 2">
+						<h3>Text 2</h3>
+					</div>
+				</li>
+				<li class="slider__slide">
+					<div class="slid">
+						<img src="./img/3.jpg" alt="Slide 3">
+						<h3>Text 3</h3>
+					</div>
+				</li>
+				<li class="slider__slide">
+					<div class="slid">
+						<img src="./img/4.jpg" alt="Slide 4">
+						<h3>Text 4</h3>
+					</div>
+				</li>
+			</ul>
+			<div class="slider__controls">
+				<div class="border"><label for="slider__toggle--1" class="slider__control"></label></div>
+				<div class="border"><label for="slider__toggle--2" class="slider__control"></label></div>
+				<div class="border"><label for="slider__toggle--3" class="slider__control"></label></div>
+				<div class="border"><label for="slider__toggle--4" class="slider__control"></label></div>
 			</div>
-		</div>	
-		<div class="slider-prev-next-control">
-			<label for=slide1></label>
-			<label for=slide2></label>
-			<label for=slide3></label>
-			<label for=slide4></label>
-		</div>
-	
-		<div class="slider-dot-control">
-			<label for=slide1></label>
-			<label for=slide2></label>
-			<label for=slide3></label>
-			<label for=slide4></label>
-		</div>
+
 	</div>
 </body>
+
 </html>
