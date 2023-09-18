@@ -70,6 +70,13 @@ img {
 	cursor: pointer;
 }
 
+.slider__control:active .btn,
+.slider__control:active .btn {
+	border: 0.063rem solid #505050;
+	background-color: #505050;
+	cursor: pointer;
+}
+
 .slider__wrapper {
 	overflow: hidden;
 	display: flex;
